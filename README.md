@@ -17,7 +17,7 @@ $ (currently, you should be in the docker container as root)
 Now we have finished the configuration of the  SSH service in container.    
 
 ## Step 2 Connect to the docker container with VScode:     
-1. Open VScode as a ```New Window```. Then, click the Extensions. Search and install extenion Remote Development. This extension set consist of the Remote-SSH and other remote extensions:    
+1. Open VScode as a ```New Window```. Then, click the Extensions. Search and install extenion Remote Development. This extension set consists of the Remote-SSH and other remote extensions:    
 ![pic2](pictures/Remote_Development.png)    
 2. Choose the the ```Remote-SSH: Open configuration file``` and open the ```/xxx/.ssh/config``` file as the following figure:    
 ![pic3](pictures/SSH_config.png)     
