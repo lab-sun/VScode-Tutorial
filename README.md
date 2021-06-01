@@ -24,7 +24,7 @@ Now we have finished the configuration of the  SSH service in container.
 ![pic4](pictures/SSH_config2.png)     
 3. Edit the ```config``` file as figure:   
 ![pic5](pictures/SSH_config3.png)     
-4. Click the left bottom icon again and select ```Remote-SSH:Connect Current Window to Host``` and select the Hostname that you wrote in the config file:        
+4. Click the left bottom icon again and select ```Remote-SSH:Connect Current Window to Host```. Then choose the Hostname that you wrote in the config file:        
 ![pic6](pictures/SSH_config4.png)     
 ![pic7](pictures/SSH_config5.png)    
 5. Enter the password you set for container root:      
