@@ -30,3 +30,4 @@ Now we have finished the configuration of the  SSH service in container.
 5. Enter the password you set for container root:      
 ![pic8](pictures/SSH_config6.png)       
 6. Now, enjoy your coding in remote docker.
+![pic9](pictures/SSH:docker.png)
