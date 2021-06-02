@@ -8,7 +8,8 @@ RUN \
   sed -i "s/PermitRootLogin/#PermitRootLogin/" /etc/ssh/sshd_config && \
   echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config && \
   echo 'UsePAM no' >> /etc/ssh/sshd_config && \
-  echo 'service ssh start' >> /etc/bash.bashrc
+  echo 'service ssh start' >> /etc/bash.bashrc && \
+  echo 'root:your_password' | chpasswd
 
 RUN pip3 install --upgrade pip
 RUN pip3 install setuptools>=40.3.0 
