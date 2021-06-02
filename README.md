@@ -16,10 +16,14 @@ RUN \
   echo 'PermitRootLogin yes' >> /etc/ssh/sshd_config && \
   echo 'UsePAM no' >> /etc/ssh/sshd_config 
 ```
-Finally, we echo a command to ```/etc/bash.bashrc``` to start the SSH service when we open a bash:   
+We echo a command to ```/etc/bash.bashrc``` to start the SSH service when we open a bash:   
 ``` 
 RUN echo 'service ssh start' >> /etc/bash.bashrc
-```   
+```    
+Finally, we can echo a password for the root of docker container in Dockerfile:     
+```      
+RUN echo 'root:your_passwd' | chpasswd       
+```
 
 2.  Enter in the folder that includes the Dockerfile and build a docker image in a termintal as follow:   
 ```
@@ -31,7 +35,7 @@ $ docker build -t docker_image .
 $ docker run -it --shm-size 8G -p 1234:6006 -p 1022:22 --ipc host --name docker_container --gpus all -v ~/your_project:/workspace docker_image  /bin/bash   
 $ (currently, you should be in the docker container as root)
 ```     
-4. Set a password for SSH connection, type ```passwd``` in the terminal and enter your password twice.      
+4. If you did not set your password in Dockerfile, then set a password for SSH connection manually, type ```passwd``` in the terminal and enter your password twice. (Skip this step, if your Dockerfile contains ```RUN echo 'root:your_passwd' | chpasswd```)      
 ![pic1](pictures/change_passwd.png)     
 Now we have finished the configuration of the  SSH service in container.    
 
