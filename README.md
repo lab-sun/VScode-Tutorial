@@ -22,7 +22,7 @@ RUN echo 'service ssh start' >> /etc/bash.bashrc
 ```    
 Finally, we can echo a password for the root of docker container in Dockerfile:     
 ```      
-RUN echo 'root:your_passwd' | chpasswd       
+RUN echo 'root:your_password' | chpasswd       
 ```
 
 2.  Enter in the folder that includes the Dockerfile and build a docker image in a termintal as follow:   
