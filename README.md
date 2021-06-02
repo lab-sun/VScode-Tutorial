@@ -35,7 +35,7 @@ $ docker build -t docker_image .
 $ docker run -it --shm-size 8G -p 1234:6006 -p 1022:22 --ipc host --name docker_container --gpus all -v ~/your_project:/workspace docker_image  /bin/bash   
 $ (currently, you should be in the docker container as root)
 ```     
-4. If you did not set your password in Dockerfile, then set a password for SSH connection manually, type ```passwd``` in the terminal and enter your password twice. (Skip this step, if your Dockerfile contains ```RUN echo 'root:your_passwd' | chpasswd```)      
+4. If you did not set your password in Dockerfile, then set a password for SSH connection manually, type ```passwd``` in the terminal and enter your password twice. (Skip this step, if your Dockerfile contains ```RUN echo 'root:your_password' | chpasswd```)      
 ![pic1](pictures/change_passwd.png)     
 Now we have finished the configuration of the  SSH service in container.    
 
