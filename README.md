@@ -58,9 +58,8 @@ Now we have finished the configuration of the  SSH service in container.
 ![pic8](pictures/SSH_config6_new.png)    
 
 
-6. Install extensions in SSH:docker.    
+6. Now you have connected to the remote docker successfully. Install extensions in SSH:docker and enjoy your coding in remote docker.    
 ![pic9](pictures/SSH:docker.png)    
 ![pic10](pictures/extension_install.png)     
-
-Now, enjoy your coding in remote docker.      
+      
 Note: Remember that the container should be always started first when we connect it with VScode.
