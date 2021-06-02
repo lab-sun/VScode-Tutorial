@@ -24,11 +24,11 @@ RUN echo 'service ssh start' >> /etc/bash.bashrc
 2.  Enter in the folder that includes the Dockerfile and build a docker image in a termintal as follow:   
 ```
 $ cd ~/docker
-$ docker build -t docker_image:v1 .
+$ docker build -t docker_image .
 ```    
-3. Then create a docker container with ```docker_image:v1``` and map the port 22 of this container to the other port of the remote machine with ```-p xxxx:22 ```:     
+3. Then create a docker container with ```docker_image``` and map the port 22 of this container to the other port of the remote machine with ```-p xxxx:22 ```:     
 ```
-$ docker run -it --shm-size 8G -p 1234:6006 -p 1022:22 --ipc host --name docker_container --gpus all -v ~/your_project:/workspace docker_image:v1  /bin/bash   
+$ docker run -it --shm-size 8G -p 1234:6006 -p 1022:22 --ipc host --name docker_container --gpus all -v ~/your_project:/workspace docker_image  /bin/bash   
 $ (currently, you should be in the docker container as root)
 ```     
 4. Set a password for SSH connection, type ```passwd``` in the terminal and enter your password twice.      
@@ -55,7 +55,7 @@ Now we have finished the configuration of the  SSH service in container.
 
 
 5. Enter the password you set for container root:      
-![pic8](pictures/SSH_config6.png)    
+![pic8](pictures/SSH_config6_new.png)    
 
 
 6. Now, enjoy your coding in remote docker.     
