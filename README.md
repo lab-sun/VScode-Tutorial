@@ -1,6 +1,7 @@
 # VScode Connects to remote Docker over SSH for Deep Learning Research
 
-This is a tutorial on using VScode and Docker over SSH. If you would like to use VScode and Docker on a local computer, please refer to this [https://github.com/lab-sun/VSCode_Docker_Tutorial](tutorial).
+This is a tutorial on using VScode and Docker over SSH. If you would like to use VScode and Docker on a local computer, please refer to this [tutorial](https://github.com/lab-sun/VSCode_Docker_Tutorial).
+
 We assume that you have successfully installed Docker engine in the remote machine. You need to know the basic knowledge about docker.     
 In gerenal, we first configure SSH service in docker container and then use the VScode Remote-SSH Extension to connect to the docker container.    
 ## Step 1 Configure SSH service in docker container:   
